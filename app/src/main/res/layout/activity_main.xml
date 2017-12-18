@@ -1,0 +1,104 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:fillViewport="false"
+    tools:context=".controlador.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/tv_label_ubicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Ubicacion"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_estado_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="ESTADO DEL GPS" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_label_latitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latitud: "
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_latitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="19.4235017" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_label_longitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Longitud: "
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_longitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="-99.1564386" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_label_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Direccion : "
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Puebla 46, Roma Norte, 06700 Cuauhtemoc, CDMX, México" />
+
+    </LinearLayout>
+
+
+</ScrollView>
